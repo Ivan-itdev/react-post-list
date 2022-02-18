@@ -6,3 +6,7 @@
     border: 1px solid var(--green);
     background-color: var(--green);
 }
+
+.myInput:hover {
+    background-color: var(--dark-green);
+}

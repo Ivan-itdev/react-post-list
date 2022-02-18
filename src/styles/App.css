@@ -41,6 +41,12 @@ html {
     border-color: var(--dark-green);
 }
 
+hr {
+    background-color: var(--black);
+    height: 2px;
+    border: none;
+}
+
 
 
 

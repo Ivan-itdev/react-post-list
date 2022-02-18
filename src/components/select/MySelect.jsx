@@ -1,11 +1,13 @@
-import React from 'react'  
+import React from 'react' 
+import classes from './MySelect.module.css' 
 
-const MySelect = ({options, defaultValue, value, sortPosts}) => {
+const MySelect = ({options, defaultValue, value, onChange}) => {
     return (
         <div>
             <select
+                className={classes.MySelect}
                 value={value}
-                onChange={e => sortPosts(e.target.value)}
+                onChange={e => onChange(e.target.value)}
             >
                 <option disabled value=''>{defaultValue}</option>
                 {options.map(option => 

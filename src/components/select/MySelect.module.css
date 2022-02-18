@@ -1,0 +1,12 @@
+.MySelect {
+    border-radius: 10px;
+    background-color: var(--green);
+    border-color: var(--green);
+    margin-top: 5px;
+    padding: 2px;
+}
+
+.MySelect:hover {
+    background-color: var(--dark-green);
+    border-color: var(--dark-green);
+}
