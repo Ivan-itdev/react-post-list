@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ivan-itdev.github.io/react-post-list",
+  "homepage": "https://Ivan-itdev.github.io/react-post-list",
   "name": "post-list",
   "version": "0.1.0",
   "private": true,
@@ -7,9 +7,11 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
+    "react-transition-group": "^4.4.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -17,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run bild",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
