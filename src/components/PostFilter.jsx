@@ -4,12 +4,11 @@ import MySelect from './select/MySelect'
 
 const PostFilter = ({filter, setFilter}) => {
     return (
-        <div>
+        <div className="postFilter">
             <MyInput
                 placeholder='Поиск'
                 value={filter.query}
                 onChange={(e) => setFilter({...filter, query: e.target.value})}
-
             />
             <MySelect
                 value={filter.sort}

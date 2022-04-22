@@ -18,3 +18,4 @@ const Pagination = ({totalPages, changePage, page}) => {
 }
 
 export default Pagination
+

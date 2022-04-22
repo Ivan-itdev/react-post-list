@@ -5,21 +5,23 @@
 }
 
 html {
-    --orange: hsl(15, 87%, 62%);
-    --dark-orange:hsl(15, 87%, 58%);
     --green: hsl(107, 44%, 68%);
     --dark-green: hsl(107, 44%, 62%);
     --black: hsl(300, 4%, 13%);
     --gray: rgb(211, 204, 204);
-    --dark-gray: rgb(192, 187, 187);
-    
-    background-color: var(--gray);
+    --dark-gray: rgb(238, 232, 232);
+    --easy-black: rgb(62,58,55);
+    --easy-white: rgb(255, 255, 255, 0.9);
+    --white: rgb(255, 255, 255);
+    overflow-y: scroll;
 }
 
 #root {
     display: flex;
     flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
     align-items: center;
+    
 }
 
 .App {
@@ -43,7 +45,6 @@ html {
     display: flex;
 }
 
-
 hr {
     margin: 15px 0;
     background-color: var(--black);
@@ -54,13 +55,16 @@ hr {
 .post-enter {
     transform: translatex(-350px);
   }
+
 .post-enter-active {
     transform: translatex(0px);
     transition: all 500ms ease-in;
 }
+
 .post-exit {
     opacity: 1;
 }
+
 .post-exit-active {
     transform: translatex(-350px);
     transition: all 500ms ease-in;
@@ -77,22 +81,28 @@ hr {
     cursor: pointer;
 }
 
-.page__current {
-    border: 2px solid orange;
-    font-weight: bold;
-}
-
-.navbar {
-    height: 50px;
-    width: 100px;
-    display: flex;
+.settingsArea {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 5px;
     align-items: center;
-    background: lightgray;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.navbar__links {
-    margin-left: auto;
+
+.postFilter {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5px;
 }
+
+
+
+
+
+
+
 
 
 

@@ -1,9 +1,12 @@
 .MySelect {
+    width: 100%;
+    min-width: 140px;
+    padding: 5px 15px;
+    margin: 3px 0px;
     border-radius: 3px;
     background-color: var(--green);
     border-color: var(--green);
-    margin-top: 5px;
-    padding: 2px;
+    
 }
 
 .MySelect:hover {

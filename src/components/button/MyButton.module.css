@@ -1,6 +1,7 @@
 .myBtn {
+    width: 100%;
     padding: 5px 15px;
-    margin-top: 5px;
+    margin: 3px 0px;
     font-size: 14px;
     background-color: var(--green);
     border: 1px solid var(--green);
@@ -12,3 +13,4 @@
     background-color: var(--dark-green);
     border: 1px solid var(--dark-green);
 }
+
