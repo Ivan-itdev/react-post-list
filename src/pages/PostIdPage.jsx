@@ -23,15 +23,20 @@ const PostIdPage = () => {
     }, [])
     
     return (
-        <div>
-            <h1>Вы открыли страницу поста с ID = {params.id}</h1>
+        <div className='postIdPage'>
+            <h2>
+                Вы открыли страницу поста с ID = {params.id}
+            </h2>
             {isLoading 
                 ? <Loader/>
-                : <div>{post.id}. {post.title}</div>
+                : <div>
+                    <div>{post.id}. {post.title}</div>
+                    <div>{post.body}</div>
+                  </div>
             }
-            <h1>
+            <h2>
                 Комментарии
-            </h1>
+            </h2>
             {isComLoading
                 ? <Loader/>
                 : <div>

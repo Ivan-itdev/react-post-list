@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import { privateRoutes, publicRoutes } from '../router'
 import { AuthContext } from '../context'
 import Posts from '../pages/Posts'
-import Login from '../pages/Login'
+import Login from '../pages/Login/Login'
 import Loader from './Loader/Loader'
 
 

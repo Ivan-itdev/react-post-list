@@ -14,36 +14,57 @@ html {
     --easy-white: rgb(255, 255, 255, 0.9);
     --white: rgb(255, 255, 255);
     overflow-y: scroll;
+    background-color: #F4F4F4;
 }
 
 #root {
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .App {
-    width: 700px;
+    width: 600px;
 }
 
+/*Стилизация внутрянки поста*/
 .post {
     width: inherit;
     display: flex;
+    gap: 20px;
     padding: 15px;
-    border: 3px solid var(--dark-gray);
+    border: 1px solid var(--dark-gray);
     border-radius: 5px;
-    background-color: var(--dark-gray);
+    background-color: var(--white);
     margin-top: 15px;
     justify-content: space-between;
     align-items: center;
     transition: background-color border-color 0.8s linear;
 }
 
+.post p {
+    text-indent: 10px;
+    margin-top: 4px;
+}
+.post span {
+    display: inline-block;
+    margin-left: 1px;
+}
+.post b {
+    display: flex;
+}
+.post p::first-letter, .post span::first-letter {
+    text-transform: uppercase;
+}
 .post__btns {
     display: flex;
 }
+
+.post__btns button {
+    margin-right: 5px;
+}
+/*____________________________*/
 
 hr {
     margin: 15px 0;
@@ -70,32 +91,74 @@ hr {
     transition: all 500ms ease-in;
 }
 
+
+/*Стилизация блока пагинации*/
 .page__wrapper {
     margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
+    justify-content: center;
+}
+
+.page__current {
+    background: var(--green);
 }
 
 .page {
-    padding: 10px;
+    padding: 5px;
     border: 1px solid var(--green);
     cursor: pointer;
 }
 
+.page__current:hover {
+    background: var(--dark-green);
+}
+
+.page:hover:not(.page__current) {
+    background: var(--easy-white);
+}
+/*_________________________*/
+
+
 .settingsArea {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    column-gap: 5px;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
 
 .postFilter {
     display: flex;
     justify-content: space-between;
     column-gap: 5px;
 }
+
+
+.about {
+    width: 600px;
+    margin-top: 30px;
+}
+
+.about p {
+    margin-top: 20px;
+    text-indent: 20px;
+}
+
+.about h2 {
+    text-align: center;
+}
+
+.postIdPage {
+    width: 600px;
+    margin-top: 30px;
+}
+
+.postIdPage * {
+    margin-bottom: 10px;
+}
+
+
 
 
 
